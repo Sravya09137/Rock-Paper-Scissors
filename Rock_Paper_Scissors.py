@@ -6,7 +6,7 @@ options=["rock","paper","scissors"]
 while True:
     user_ip=input("Enter :\n Rock \n Paper \n Scissors \n Q-Quit \n").lower()
     if(user_ip=="q"):
-        quit()
+        break
     if user_ip not in options:
         continue
 
@@ -30,7 +30,6 @@ while True:
     else:
         print("Oops !,You lost ")
         comp_sc+=1
-    
 print("Scores :\n","You :",user_sc,"\nComp :",comp_sc)
 print("Goodbye")
     
